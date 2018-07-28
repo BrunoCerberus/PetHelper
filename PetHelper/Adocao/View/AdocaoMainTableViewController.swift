@@ -16,9 +16,13 @@ class AdocaoMainTableViewController: UITableViewController {
     @IBOutlet weak var refreshComponent: UIRefreshControl!
     
     var animais = [[String: String]]()
+    var petShops = [[String: String]]()
     var animalSeleciondo: [String: String]!
+    var petShopSelecionado: [String: String]!
     var cachorrosImagens = [String]()
+    var petshopImagens = [String]()
     var imagemCachorroSelecionada: String = ""
+    var imagemPetShopSelecionada: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -107,16 +111,98 @@ class AdocaoMainTableViewController: UITableViewController {
         É um cachorro bem eletrico, adora correr e fazer besteira,
         gosta de caminhadas no final da tarde e beber muita agua.
         """
-        animais.append(animal)
-        animal = [:]
+        
+        //---------------------------------------------------------------------------
+        var petshop: [String: String] = [:]
+        
+        petshop["nome"] = "PET SHOP Numero 1"
+        petshop["telefone"] = "27 3223-5532"
+        petshop["cidade"] = "Vitória"
+        petshop["email"] = "petshopvitoria@yahoo.com"
+        petshop["bairro"] = "Jardim Camburi"
+        petshop["distancia"] = "3km de distância"
+        petshop["descricao"] = """
+        A PET-SHOP Vitória sempre esta de portas abertas para
+        cuidar, tratar e entreter o seu cachorro.
+        """
+        petShops.append(petshop)
+        petshop = [:]
+        
+        //---------------------------------------------------------------------------
+        
+        petshop["nome"] = "PET SHOP Numero 2"
+        petshop["telefone"] = "27 3223-5532"
+        petshop["cidade"] = "Vitória"
+        petshop["email"] = "petshopvitoria@yahoo.com"
+        petshop["bairro"] = "Jardim Camburi"
+        petshop["distancia"] = "3km de distância"
+        petshop["descricao"] = """
+        A PET-SHOP Vitória sempre esta de portas abertas para
+        cuidar, tratar e entreter o seu cachorro.
+        """
+        petShops.append(petshop)
+        petshop = [:]
+        
+        //---------------------------------------------------------------------------
+        
+        petshop["nome"] = "PET SHOP Numero 3"
+        petshop["telefone"] = "27 3223-5532"
+        petshop["cidade"] = "Vitória"
+        petshop["email"] = "petshopvitoria@yahoo.com"
+        petshop["bairro"] = "Jardim Camburi"
+        petshop["distancia"] = "3km de distância"
+        petshop["descricao"] = """
+        A PET-SHOP Vitória sempre esta de portas abertas para
+        cuidar, tratar e entreter o seu cachorro.
+        """
+        petShops.append(petshop)
+        petshop = [:]
+        
+        //---------------------------------------------------------------------------
+        
+        petshop["nome"] = "PET SHOP Numero 4"
+        petshop["telefone"] = "27 3223-5532"
+        petshop["cidade"] = "Vitória"
+        petshop["email"] = "petshopvitoria@yahoo.com"
+        petshop["bairro"] = "Jardim Camburi"
+        petshop["distancia"] = "3km de distância"
+        petshop["descricao"] = """
+        A PET-SHOP Vitória sempre esta de portas abertas para
+        cuidar, tratar e entreter o seu cachorro.
+        """
+        petShops.append(petshop)
+        petshop = [:]
+        
+        //---------------------------------------------------------------------------
+        
+        petshop["nome"] = "PET SHOP Numero 5"
+        petshop["telefone"] = "27 3223-5532"
+        petshop["cidade"] = "Vitória"
+        petshop["email"] = "petshopvitoria@yahoo.com"
+        petshop["bairro"] = "Jardim Camburi"
+        petshop["distancia"] = "3km de distância"
+        petshop["descricao"] = """
+        A PET-SHOP Vitória sempre esta de portas abertas para
+        cuidar, tratar e entreter o seu cachorro.
+        """
+        petShops.append(petshop)
+        petshop = [:]
+        
+        //---------------------------------------------------------------------------
         
         let fm = FileManager.default
         let path = Bundle.main.resourcePath
         let items = try! fm.contentsOfDirectory(atPath: path!)
         
         for item in items {
-            if item.hasSuffix("jpg") {
+            if item.hasPrefix("cachorro") {
                 cachorrosImagens.append(item)
+            }
+        }
+        
+        for item in items {
+            if item.hasPrefix("petshop"){
+                petshopImagens.append(item)
             }
         }
 
@@ -171,6 +257,13 @@ class AdocaoMainTableViewController: UITableViewController {
                 vc.delegate = self
             }
         }
+        
+        if segue.identifier == "detalhePetShop" {
+            if let vc = segue.destination as? DetalhePetShopViewController {
+                vc.imagemSelecionada = self.imagemPetShopSelecionada
+                vc.petShopSelecionado = self.petShopSelecionado
+            }
+        }
     }
  
     
@@ -193,10 +286,10 @@ extension AdocaoMainTableViewController: UICollectionViewDelegate, UICollectionV
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if collectionView == animaisCollectionView {
-            return 10
+            return 5
         }
         
-        return 10
+        return 5
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -227,7 +320,9 @@ extension AdocaoMainTableViewController: UICollectionViewDelegate, UICollectionV
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         if collectionView == petShopCollection {
-           
+           self.imagemPetShopSelecionada = self.petshopImagens[indexPath.row]
+            self.petShopSelecionado = self.petShops[indexPath.row]
+            self.performSegue(withIdentifier: "detalhePetShop", sender: nil)
         } else if collectionView == OngCollectionView {
             
         } else {

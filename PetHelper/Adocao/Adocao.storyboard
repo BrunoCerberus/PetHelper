@@ -194,11 +194,88 @@
                         <outlet property="refreshComponent" destination="UDz-cV-c60" id="PVJ-DN-5Pe"/>
                         <segue destination="Xtc-yw-2yB" kind="show" identifier="detalheAnimal" id="Vyg-CW-hDS"/>
                         <segue destination="ASo-eI-oSE" kind="presentation" identifier="goSucesso" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="dyj-ve-OfC"/>
+                        <segue destination="SIw-4y-QRV" kind="show" identifier="detalhePetShop" id="a7b-cH-6uR"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UA5-Vk-TBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="828" y="-216.50246305418719"/>
+        </scene>
+        <!--Detalhe Pet Shop View Controller-->
+        <scene sceneID="D7d-92-gf5">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="SIw-4y-QRV" customClass="DetalhePetShopViewController" customModule="PetHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ko5-gY-Ru6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VUl-5d-W6t">
+                                <rect key="frame" x="0.0" y="88" width="375" height="305"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="305" id="Nlu-Gr-frc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Pipoca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjY-Dv-V2g">
+                                <rect key="frame" x="16" y="415" width="67.666666666666671" height="25.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lFs-kf-96t">
+                                <rect key="frame" x="16" y="479" width="15" height="15"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="Tud-LP-UVo"/>
+                                    <constraint firstAttribute="width" constant="15" id="Vb4-qT-81y"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="7.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitória" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ul6-E2-7kR">
+                                <rect key="frame" x="39" y="478" width="41.666666666666657" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3km de distância" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8XY-MP-d76">
+                                <rect key="frame" x="154.66666666666666" y="478" width="109.99999999999997" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmv-5x-kbH">
+                                <rect key="frame" x="16" y="536" width="343" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ul6-E2-7kR" firstAttribute="leading" secondItem="lFs-kf-96t" secondAttribute="trailing" constant="8" id="29h-ud-0hy"/>
+                            <constraint firstItem="VUl-5d-W6t" firstAttribute="top" secondItem="LIs-O3-7cc" secondAttribute="top" id="86e-6d-Ejf"/>
+                            <constraint firstItem="lFs-kf-96t" firstAttribute="top" secondItem="OjY-Dv-V2g" secondAttribute="bottom" constant="38.666666666666686" id="8DY-6M-uoA"/>
+                            <constraint firstItem="OjY-Dv-V2g" firstAttribute="top" secondItem="VUl-5d-W6t" secondAttribute="bottom" constant="22" id="BXe-cZ-S4j"/>
+                            <constraint firstItem="LIs-O3-7cc" firstAttribute="trailing" secondItem="cmv-5x-kbH" secondAttribute="trailing" constant="16" id="Bf9-0w-hku"/>
+                            <constraint firstItem="cmv-5x-kbH" firstAttribute="top" secondItem="8XY-MP-d76" secondAttribute="bottom" constant="41" id="EI7-29-54H"/>
+                            <constraint firstItem="Ul6-E2-7kR" firstAttribute="centerY" secondItem="lFs-kf-96t" secondAttribute="centerY" id="Gwz-J6-OON"/>
+                            <constraint firstItem="OjY-Dv-V2g" firstAttribute="leading" secondItem="LIs-O3-7cc" secondAttribute="leading" constant="16" id="HnN-3h-eTr"/>
+                            <constraint firstItem="8XY-MP-d76" firstAttribute="leading" secondItem="Ul6-E2-7kR" secondAttribute="trailing" constant="74" id="MV5-il-Qc5"/>
+                            <constraint firstItem="VUl-5d-W6t" firstAttribute="leading" secondItem="LIs-O3-7cc" secondAttribute="leading" id="QaZ-a6-KyI"/>
+                            <constraint firstItem="VUl-5d-W6t" firstAttribute="trailing" secondItem="LIs-O3-7cc" secondAttribute="trailing" id="aQL-MY-CRp"/>
+                            <constraint firstItem="lFs-kf-96t" firstAttribute="leading" secondItem="LIs-O3-7cc" secondAttribute="leading" constant="16" id="dzL-Jd-ElB"/>
+                            <constraint firstItem="cmv-5x-kbH" firstAttribute="leading" secondItem="LIs-O3-7cc" secondAttribute="leading" constant="16" id="e8c-0M-Tvl"/>
+                            <constraint firstItem="8XY-MP-d76" firstAttribute="centerY" secondItem="Ul6-E2-7kR" secondAttribute="centerY" id="iBJ-vc-gm7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LIs-O3-7cc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ibl-ZR-bDo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1868" y="-125.61576354679804"/>
         </scene>
         <!--Sucesso View Controller-->
         <scene sceneID="6UG-qN-LEr">
@@ -291,13 +368,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labrador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mi9-48-8dy">
-                                <rect key="frame" x="30" y="371.33333333333331" width="65.666666666666671" height="21.333333333333314"/>
+                                <rect key="frame" x="30" y="371.33333333333331" width="65.666666666666671" height="19.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vtu-fB-tv7">
-                                <rect key="frame" x="30" y="409.66666666666669" width="15" height="15"/>
+                                <rect key="frame" x="30" y="407.66666666666669" width="15" height="15"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="15" id="Bdp-72-bx4"/>
@@ -310,19 +387,19 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitória" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K2J-kO-8n4">
-                                <rect key="frame" x="53" y="408.66666666666669" width="41.666666666666657" height="17"/>
+                                <rect key="frame" x="53" y="406.66666666666669" width="41.666666666666657" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3km de distância" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wxg-0F-ONO">
-                                <rect key="frame" x="168.66666666666666" y="408.66666666666669" width="109.99999999999997" height="17"/>
+                                <rect key="frame" x="168.66666666666666" y="406.66666666666669" width="109.99999999999997" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cs-Gr-UJB">
-                                <rect key="frame" x="30" y="466.66666666666669" width="329" height="17"/>
+                                <rect key="frame" x="30" y="464.66666666666669" width="329" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -480,7 +557,6 @@
                             <constraint firstItem="Vtu-fB-tv7" firstAttribute="top" secondItem="mi9-48-8dy" secondAttribute="bottom" constant="17" id="loh-w9-vSU"/>
                             <constraint firstItem="K2J-kO-8n4" firstAttribute="centerY" secondItem="Vtu-fB-tv7" secondAttribute="centerY" id="vc4-rB-oL7"/>
                             <constraint firstItem="Vtu-fB-tv7" firstAttribute="leading" secondItem="mi9-48-8dy" secondAttribute="leading" id="yeV-UX-kCV"/>
-                            <constraint firstItem="5hU-gA-prJ" firstAttribute="top" secondItem="7cs-Gr-UJB" secondAttribute="bottom" constant="47" id="zDp-pn-rsu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="99M-eV-5hA"/>
                     </view>
@@ -500,7 +576,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWM-0G-mU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855" y="-217"/>
+            <point key="canvasLocation" x="1903" y="-881"/>
         </scene>
         <!--Item-->
         <scene sceneID="ByS-yC-jc8">
