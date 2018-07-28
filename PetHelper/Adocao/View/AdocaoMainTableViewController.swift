@@ -10,6 +10,11 @@ import UIKit
 
 class AdocaoMainTableViewController: UITableViewController {
 
+    @IBOutlet weak var petShopCollection: UICollectionView!
+    @IBOutlet weak var OngCollectionView: UICollectionView!
+    @IBOutlet weak var AnimaisTableView: UITableView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
