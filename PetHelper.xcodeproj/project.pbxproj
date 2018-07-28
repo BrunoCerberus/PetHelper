@@ -17,6 +17,7 @@
 		1511AE7A210CAD8F0032ECEE /* Adocao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1511AE79210CAD8F0032ECEE /* Adocao.storyboard */; };
 		1511AE80210CAE070032ECEE /* Noticias.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1511AE7F210CAE070032ECEE /* Noticias.storyboard */; };
 		1511AE86210CB5B90032ECEE /* Orientacoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1511AE85210CB5B90032ECEE /* Orientacoes.storyboard */; };
+		15C0CE8C210CBDE9003AF970 /* AdocaoMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0CE8B210CBDE9003AF970 /* AdocaoMainTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1511AE79210CAD8F0032ECEE /* Adocao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Adocao.storyboard; sourceTree = "<group>"; };
 		1511AE7F210CAE070032ECEE /* Noticias.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Noticias.storyboard; sourceTree = "<group>"; };
 		1511AE85210CB5B90032ECEE /* Orientacoes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Orientacoes.storyboard; sourceTree = "<group>"; };
+		15C0CE8B210CBDE9003AF970 /* AdocaoMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdocaoMainTableViewController.swift; sourceTree = "<group>"; };
 		AFF4375C361B1EE5D3E3DD83 /* Pods_PetHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B0548F6076235A63F1A714 /* Pods-PetHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +108,7 @@
 		1511AE76210CAD480032ECEE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				15C0CE8B210CBDE9003AF970 /* AdocaoMainTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1511AE63210CAACB0032ECEE /* ViewController.swift in Sources */,
+				15C0CE8C210CBDE9003AF970 /* AdocaoMainTableViewController.swift in Sources */,
 				1511AE61210CAACB0032ECEE /* AppDelegate.swift in Sources */,
 				1511AE69210CAACB0032ECEE /* PetHelper.xcdatamodeld in Sources */,
 			);
