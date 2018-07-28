@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AdocaoMainTableViewController: UITableViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class AdocaoMainTableViewController: UITableViewController {
 
     @IBOutlet weak var petShopCollection: UICollectionView!
     @IBOutlet weak var OngCollectionView: UICollectionView!
@@ -18,6 +18,10 @@ class AdocaoMainTableViewController: UITableViewController, UICollectionViewDele
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        animaisCollectionView.isScrollEnabled = false
+        tableView.estimatedRowHeight = 200
+        tableView.rowHeight = UITableView.automaticDimension
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -62,6 +66,18 @@ class AdocaoMainTableViewController: UITableViewController, UICollectionViewDele
     }
     */
     
+    
+    @IBAction func refresh(_ sender: Any) {
+        
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
+            self.refreshComponent.endRefreshing()
+        }
+    }
+    
+}
+
+extension AdocaoMainTableViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
     }
@@ -69,7 +85,7 @@ class AdocaoMainTableViewController: UITableViewController, UICollectionViewDele
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if collectionView == animaisCollectionView {
-            return 30
+            return 10
         }
         
         return 10
@@ -91,15 +107,16 @@ class AdocaoMainTableViewController: UITableViewController, UICollectionViewDele
             animalCell.contentView.backgroundColor = UIColor.lightGray
             return animalCell
         }
-        
-        
     }
     
-    @IBAction func refresh(_ sender: Any) {
-        
-        Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
-            self.refreshComponent.endRefreshing()
+    override func tableView(_ tableView: UITableView, willDisplayHeaderView view:UIView, forSection: Int) {
+        if let tableViewHeaderFooterView = view as? UITableViewHeaderFooterView {
+            tableViewHeaderFooterView.textLabel?.textColor = UIColor.black
+            tableViewHeaderFooterView.contentView.backgroundColor = UIColor.white
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.performSegue(withIdentifier: "detalheAnimal", sender: nil)
+    }
 }
