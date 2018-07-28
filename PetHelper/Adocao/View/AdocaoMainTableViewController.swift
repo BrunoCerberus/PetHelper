@@ -12,8 +12,8 @@ class AdocaoMainTableViewController: UITableViewController, UICollectionViewDele
 
     @IBOutlet weak var petShopCollection: UICollectionView!
     @IBOutlet weak var OngCollectionView: UICollectionView!
-    @IBOutlet weak var AnimaisTableView: UITableView!
-    
+    @IBOutlet weak var animaisCollectionView: UICollectionView!
+    @IBOutlet weak var refreshComponent: UIRefreshControl!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +68,10 @@ class AdocaoMainTableViewController: UITableViewController, UICollectionViewDele
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
+        if collectionView == animaisCollectionView {
+            return 30
+        }
+        
         return 10
     }
     
@@ -75,14 +79,27 @@ class AdocaoMainTableViewController: UITableViewController, UICollectionViewDele
         
         if collectionView == petShopCollection {
             let petShopCell = petShopCollection.dequeueReusableCell(withReuseIdentifier: "petCell", for: indexPath)
-            petShopCell.contentView.backgroundColor = UIColor.black
+            petShopCell.contentView.backgroundColor = UIColor.lightGray
             return petShopCell
-        } else {
+        } else if collectionView == OngCollectionView {
             let ongCell = OngCollectionView.dequeueReusableCell(withReuseIdentifier: "ongCell", for: indexPath)
-            ongCell.contentView.backgroundColor = UIColor.yellow
+            ongCell.contentView.backgroundColor = UIColor.lightGray
             return ongCell
+        } else {
+            
+            let animalCell = animaisCollectionView.dequeueReusableCell(withReuseIdentifier: "animalCell", for: indexPath)
+            animalCell.contentView.backgroundColor = UIColor.lightGray
+            return animalCell
         }
         
+        
     }
-
+    
+    @IBAction func refresh(_ sender: Any) {
+        
+        Timer.scheduledTimer(withTimeInterval: 3, repeats: false) { (timer) in
+            self.refreshComponent.endRefreshing()
+        }
+    }
+    
 }
