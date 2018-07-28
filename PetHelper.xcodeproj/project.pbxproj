@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03FC41CB06C9327978C33C55 /* Pods_PetHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF4375C361B1EE5D3E3DD83 /* Pods_PetHelper.framework */; };
+		1511AE61210CAACB0032ECEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1511AE60210CAACB0032ECEE /* AppDelegate.swift */; };
+		1511AE63210CAACB0032ECEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1511AE62210CAACB0032ECEE /* ViewController.swift */; };
+		1511AE66210CAACB0032ECEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1511AE64210CAACB0032ECEE /* Main.storyboard */; };
+		1511AE69210CAACB0032ECEE /* PetHelper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1511AE67210CAACB0032ECEE /* PetHelper.xcdatamodeld */; };
+		1511AE6B210CAACD0032ECEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1511AE6A210CAACD0032ECEE /* Assets.xcassets */; };
+		1511AE6E210CAACD0032ECEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1511AE6C210CAACD0032ECEE /* LaunchScreen.storyboard */; };
+		1511AE7A210CAD8F0032ECEE /* Adocao.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1511AE79210CAD8F0032ECEE /* Adocao.storyboard */; };
+		1511AE80210CAE070032ECEE /* Noticias.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1511AE7F210CAE070032ECEE /* Noticias.storyboard */; };
+		1511AE86210CB5B90032ECEE /* Orientacoes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1511AE85210CB5B90032ECEE /* Orientacoes.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05EA766B0D4AB39DBBA6D463 /* Pods-PetHelper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetHelper.release.xcconfig"; path = "Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper.release.xcconfig"; sourceTree = "<group>"; };
+		1511AE5D210CAACB0032ECEE /* PetHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1511AE60210CAACB0032ECEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1511AE62210CAACB0032ECEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1511AE65210CAACB0032ECEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1511AE68210CAACB0032ECEE /* PetHelper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetHelper.xcdatamodel; sourceTree = "<group>"; };
+		1511AE6A210CAACD0032ECEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1511AE6D210CAACD0032ECEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1511AE6F210CAACD0032ECEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1511AE79210CAD8F0032ECEE /* Adocao.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Adocao.storyboard; sourceTree = "<group>"; };
+		1511AE7F210CAE070032ECEE /* Noticias.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Noticias.storyboard; sourceTree = "<group>"; };
+		1511AE85210CB5B90032ECEE /* Orientacoes.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Orientacoes.storyboard; sourceTree = "<group>"; };
+		AFF4375C361B1EE5D3E3DD83 /* Pods_PetHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7B0548F6076235A63F1A714 /* Pods-PetHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1511AE5A210CAACB0032ECEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03FC41CB06C9327978C33C55 /* Pods_PetHelper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C44782B4900EC54835D81EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F7B0548F6076235A63F1A714 /* Pods-PetHelper.debug.xcconfig */,
+				05EA766B0D4AB39DBBA6D463 /* Pods-PetHelper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1511AE54210CAACB0032ECEE = {
+			isa = PBXGroup;
+			children = (
+				1511AE5F210CAACB0032ECEE /* PetHelper */,
+				1511AE5E210CAACB0032ECEE /* Products */,
+				0C44782B4900EC54835D81EE /* Pods */,
+				C8DF6E9DB5195A586D37DB8C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1511AE5E210CAACB0032ECEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1511AE5D210CAACB0032ECEE /* PetHelper.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1511AE5F210CAACB0032ECEE /* PetHelper */ = {
+			isa = PBXGroup;
+			children = (
+				1511AE60210CAACB0032ECEE /* AppDelegate.swift */,
+				1511AE75210CAB620032ECEE /* Adocao */,
+				1511AE7B210CADD30032ECEE /* Noticias */,
+				1511AE81210CB5320032ECEE /* Orientacoes */,
+				1511AE62210CAACB0032ECEE /* ViewController.swift */,
+				1511AE64210CAACB0032ECEE /* Main.storyboard */,
+				1511AE6A210CAACD0032ECEE /* Assets.xcassets */,
+				1511AE6C210CAACD0032ECEE /* LaunchScreen.storyboard */,
+				1511AE6F210CAACD0032ECEE /* Info.plist */,
+				1511AE67210CAACB0032ECEE /* PetHelper.xcdatamodeld */,
+			);
+			path = PetHelper;
+			sourceTree = "<group>";
+		};
+		1511AE75210CAB620032ECEE /* Adocao */ = {
+			isa = PBXGroup;
+			children = (
+				1511AE77210CAD570032ECEE /* Model */,
+				1511AE76210CAD480032ECEE /* View */,
+				1511AE78210CAD5E0032ECEE /* ViewModel */,
+				1511AE79210CAD8F0032ECEE /* Adocao.storyboard */,
+			);
+			path = Adocao;
+			sourceTree = "<group>";
+		};
+		1511AE76210CAD480032ECEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1511AE77210CAD570032ECEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1511AE78210CAD5E0032ECEE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1511AE7B210CADD30032ECEE /* Noticias */ = {
+			isa = PBXGroup;
+			children = (
+				1511AE7C210CADE00032ECEE /* Model */,
+				1511AE7D210CADF20032ECEE /* View */,
+				1511AE7E210CADF90032ECEE /* ViewModel */,
+				1511AE7F210CAE070032ECEE /* Noticias.storyboard */,
+			);
+			path = Noticias;
+			sourceTree = "<group>";
+		};
+		1511AE7C210CADE00032ECEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1511AE7D210CADF20032ECEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1511AE7E210CADF90032ECEE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1511AE81210CB5320032ECEE /* Orientacoes */ = {
+			isa = PBXGroup;
+			children = (
+				1511AE82210CB57A0032ECEE /* Model */,
+				1511AE83210CB5800032ECEE /* View */,
+				1511AE84210CB5850032ECEE /* ViewModel */,
+				1511AE85210CB5B90032ECEE /* Orientacoes.storyboard */,
+			);
+			path = Orientacoes;
+			sourceTree = "<group>";
+		};
+		1511AE82210CB57A0032ECEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1511AE83210CB5800032ECEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1511AE84210CB5850032ECEE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C8DF6E9DB5195A586D37DB8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFF4375C361B1EE5D3E3DD83 /* Pods_PetHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1511AE5C210CAACB0032ECEE /* PetHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1511AE72210CAACD0032ECEE /* Build configuration list for PBXNativeTarget "PetHelper" */;
+			buildPhases = (
+				7D92BAEF741B6C7DCD8BD146 /* [CP] Check Pods Manifest.lock */,
+				1511AE59210CAACB0032ECEE /* Sources */,
+				1511AE5A210CAACB0032ECEE /* Frameworks */,
+				1511AE5B210CAACB0032ECEE /* Resources */,
+				BD9E4C51BAF12260FD7E2EAD /* [CP] Embed Pods Frameworks */,
+				65A491E6BC046791AF38300B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PetHelper;
+			productName = PetHelper;
+			productReference = 1511AE5D210CAACB0032ECEE /* PetHelper.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1511AE55210CAACB0032ECEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Bruno Lopes de Mello";
+				TargetAttributes = {
+					1511AE5C210CAACB0032ECEE = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 1511AE58210CAACB0032ECEE /* Build configuration list for PBXProject "PetHelper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1511AE54210CAACB0032ECEE;
+			productRefGroup = 1511AE5E210CAACB0032ECEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1511AE5C210CAACB0032ECEE /* PetHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1511AE5B210CAACB0032ECEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1511AE6E210CAACD0032ECEE /* LaunchScreen.storyboard in Resources */,
+				1511AE86210CB5B90032ECEE /* Orientacoes.storyboard in Resources */,
+				1511AE7A210CAD8F0032ECEE /* Adocao.storyboard in Resources */,
+				1511AE6B210CAACD0032ECEE /* Assets.xcassets in Resources */,
+				1511AE80210CAE070032ECEE /* Noticias.storyboard in Resources */,
+				1511AE66210CAACB0032ECEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65A491E6BC046791AF38300B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D92BAEF741B6C7DCD8BD146 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetHelper-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD9E4C51BAF12260FD7E2EAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1511AE59210CAACB0032ECEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1511AE63210CAACB0032ECEE /* ViewController.swift in Sources */,
+				1511AE61210CAACB0032ECEE /* AppDelegate.swift in Sources */,
+				1511AE69210CAACB0032ECEE /* PetHelper.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1511AE64210CAACB0032ECEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1511AE65210CAACB0032ECEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1511AE6C210CAACD0032ECEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1511AE6D210CAACD0032ECEE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1511AE70210CAACD0032ECEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1511AE71210CAACD0032ECEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1511AE73210CAACD0032ECEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7B0548F6076235A63F1A714 /* Pods-PetHelper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RDTR6557FX;
+				INFOPLIST_FILE = PetHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pethelper.PetHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1511AE74210CAACD0032ECEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05EA766B0D4AB39DBBA6D463 /* Pods-PetHelper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RDTR6557FX;
+				INFOPLIST_FILE = PetHelper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pethelper.PetHelper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1511AE58210CAACB0032ECEE /* Build configuration list for PBXProject "PetHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1511AE70210CAACD0032ECEE /* Debug */,
+				1511AE71210CAACD0032ECEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1511AE72210CAACD0032ECEE /* Build configuration list for PBXNativeTarget "PetHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1511AE73210CAACD0032ECEE /* Debug */,
+				1511AE74210CAACD0032ECEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1511AE67210CAACB0032ECEE /* PetHelper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1511AE68210CAACB0032ECEE /* PetHelper.xcdatamodel */,
+			);
+			currentVersion = 1511AE68210CAACB0032ECEE /* PetHelper.xcdatamodel */;
+			path = PetHelper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1511AE55210CAACB0032ECEE /* Project object */;
+}
