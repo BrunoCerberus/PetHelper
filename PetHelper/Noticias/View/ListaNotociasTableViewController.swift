@@ -1,5 +1,5 @@
 //
-//  AdocaoMainTableViewController.swift
+//  ListaNotociasTableViewController.swift
 //  PetHelper
 //
 //  Created by Bruno Lopes de Mello on 28/07/18.
@@ -8,13 +8,8 @@
 
 import UIKit
 
-class AdocaoMainTableViewController: UITableViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ListaNotociasTableViewController: UITableViewController {
 
-    @IBOutlet weak var petShopCollection: UICollectionView!
-    @IBOutlet weak var OngCollectionView: UICollectionView!
-    @IBOutlet weak var AnimaisTableView: UITableView!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,7 +21,26 @@ class AdocaoMainTableViewController: UITableViewController, UICollectionViewDele
     }
 
     // MARK: - Table view data source
- 
+
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 0
+    }
+
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0
+    }
+
+    /*
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+
+        // Configure the cell...
+
+        return cell
+    }
+    */
 
     /*
     // Override to support conditional editing of the table view.
@@ -35,7 +49,18 @@ class AdocaoMainTableViewController: UITableViewController, UICollectionViewDele
         return true
     }
     */
- 
+
+    /*
+    // Override to support editing the table view.
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            // Delete the row from the data source
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
+            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        }    
+    }
+    */
 
     /*
     // Override to support rearranging the table view.
@@ -61,28 +86,5 @@ class AdocaoMainTableViewController: UITableViewController, UICollectionViewDele
         // Pass the selected object to the new view controller.
     }
     */
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
-        return 10
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        if collectionView == petShopCollection {
-            let petShopCell = petShopCollection.dequeueReusableCell(withReuseIdentifier: "petCell", for: indexPath)
-            petShopCell.contentView.backgroundColor = UIColor.black
-            return petShopCell
-        } else {
-            let ongCell = OngCollectionView.dequeueReusableCell(withReuseIdentifier: "ongCell", for: indexPath)
-            ongCell.contentView.backgroundColor = UIColor.yellow
-            return ongCell
-        }
-        
-    }
 
 }
