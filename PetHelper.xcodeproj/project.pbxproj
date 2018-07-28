@@ -20,6 +20,10 @@
 		15C0CE8C210CBDE9003AF970 /* AdocaoMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0CE8B210CBDE9003AF970 /* AdocaoMainTableViewController.swift */; };
 		15C0CE8E210CD27E003AF970 /* ListaNotociasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0CE8D210CD27E003AF970 /* ListaNotociasTableViewController.swift */; };
 		15C0CE90210CE359003AF970 /* ListaPetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0CE8F210CE359003AF970 /* ListaPetsTableViewController.swift */; };
+		15C0CE92210D06E8003AF970 /* AdocaoMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0CE91210D06E8003AF970 /* AdocaoMainViewModel.swift */; };
+		15C0CE94210D07B5003AF970 /* DetalheAnimalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0CE93210D07B5003AF970 /* DetalheAnimalViewModel.swift */; };
+		15C0CE96210D07D0003AF970 /* DetalheAnimalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0CE95210D07D0003AF970 /* DetalheAnimalViewController.swift */; };
+		15C0CE98210D0F28003AF970 /* SucessoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C0CE97210D0F28003AF970 /* SucessoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		15C0CE8B210CBDE9003AF970 /* AdocaoMainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdocaoMainTableViewController.swift; sourceTree = "<group>"; };
 		15C0CE8D210CD27E003AF970 /* ListaNotociasTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaNotociasTableViewController.swift; sourceTree = "<group>"; };
 		15C0CE8F210CE359003AF970 /* ListaPetsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaPetsTableViewController.swift; sourceTree = "<group>"; };
+		15C0CE91210D06E8003AF970 /* AdocaoMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdocaoMainViewModel.swift; sourceTree = "<group>"; };
+		15C0CE93210D07B5003AF970 /* DetalheAnimalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheAnimalViewModel.swift; sourceTree = "<group>"; };
+		15C0CE95210D07D0003AF970 /* DetalheAnimalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalheAnimalViewController.swift; sourceTree = "<group>"; };
+		15C0CE97210D0F28003AF970 /* SucessoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SucessoViewController.swift; sourceTree = "<group>"; };
 		AFF4375C361B1EE5D3E3DD83 /* Pods_PetHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B0548F6076235A63F1A714 /* Pods-PetHelper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetHelper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PetHelper/Pods-PetHelper.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +122,8 @@
 			children = (
 				15C0CE8B210CBDE9003AF970 /* AdocaoMainTableViewController.swift */,
 				15C0CE8F210CE359003AF970 /* ListaPetsTableViewController.swift */,
+				15C0CE95210D07D0003AF970 /* DetalheAnimalViewController.swift */,
+				15C0CE97210D0F28003AF970 /* SucessoViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +138,8 @@
 		1511AE78210CAD5E0032ECEE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				15C0CE91210D06E8003AF970 /* AdocaoMainViewModel.swift */,
+				15C0CE93210D07B5003AF970 /* DetalheAnimalViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -362,8 +374,12 @@
 				1511AE63210CAACB0032ECEE /* ViewController.swift in Sources */,
 				15C0CE8C210CBDE9003AF970 /* AdocaoMainTableViewController.swift in Sources */,
 				15C0CE8E210CD27E003AF970 /* ListaNotociasTableViewController.swift in Sources */,
+				15C0CE96210D07D0003AF970 /* DetalheAnimalViewController.swift in Sources */,
 				1511AE61210CAACB0032ECEE /* AppDelegate.swift in Sources */,
+				15C0CE94210D07B5003AF970 /* DetalheAnimalViewModel.swift in Sources */,
 				1511AE69210CAACB0032ECEE /* PetHelper.xcdatamodeld in Sources */,
+				15C0CE92210D06E8003AF970 /* AdocaoMainViewModel.swift in Sources */,
+				15C0CE98210D0F28003AF970 /* SucessoViewController.swift in Sources */,
 				15C0CE90210CE359003AF970 /* ListaPetsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

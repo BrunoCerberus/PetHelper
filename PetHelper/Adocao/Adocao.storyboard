@@ -126,15 +126,15 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Animais para Adoção" id="J5c-4T-ZVY">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="501" id="8wy-dA-9Dm">
-                                        <rect key="frame" x="0.0" y="460" width="375" height="501"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="1003" id="8wy-dA-9Dm">
+                                        <rect key="frame" x="0.0" y="460" width="375" height="1003"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8wy-dA-9Dm" id="SQH-PJ-Znt">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="500.66666666666669"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="1002.6666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iZf-Zg-e01">
-                                                    <rect key="frame" x="16" y="11" width="343" height="479"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="1002.6666666666666"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" id="575-K5-ejU">
                                                         <size key="itemSize" width="300" height="100"/>
@@ -144,7 +144,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="animalCell" id="syg-xd-ALZ">
-                                                            <rect key="frame" x="21.666666666666668" y="0.0" width="300" height="100"/>
+                                                            <rect key="frame" x="37.666666666666664" y="0.0" width="300" height="100"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                                 <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
@@ -165,10 +165,10 @@
                                                 </collectionView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="iZf-Zg-e01" firstAttribute="leading" secondItem="SQH-PJ-Znt" secondAttribute="leadingMargin" id="BMg-BC-o7U"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="iZf-Zg-e01" secondAttribute="trailing" id="ZaK-Uy-dBs"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="iZf-Zg-e01" secondAttribute="bottom" id="fIP-Hs-MKU"/>
-                                                <constraint firstItem="iZf-Zg-e01" firstAttribute="top" secondItem="SQH-PJ-Znt" secondAttribute="topMargin" id="hLd-mb-D3b"/>
+                                                <constraint firstAttribute="bottom" secondItem="iZf-Zg-e01" secondAttribute="bottom" id="6Je-TA-pDn"/>
+                                                <constraint firstItem="iZf-Zg-e01" firstAttribute="leading" secondItem="SQH-PJ-Znt" secondAttribute="leading" id="PCf-g5-7kA"/>
+                                                <constraint firstItem="iZf-Zg-e01" firstAttribute="top" secondItem="SQH-PJ-Znt" secondAttribute="top" id="ikA-aP-uLF"/>
+                                                <constraint firstAttribute="trailing" secondItem="iZf-Zg-e01" secondAttribute="trailing" id="nUA-gv-QqY"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -192,17 +192,88 @@
                         <outlet property="animaisCollectionView" destination="iZf-Zg-e01" id="P2K-c8-MCq"/>
                         <outlet property="petShopCollection" destination="IZl-MA-PXm" id="IFT-RA-Ckz"/>
                         <outlet property="refreshComponent" destination="UDz-cV-c60" id="PVJ-DN-5Pe"/>
-                        <segue destination="Xtc-yw-2yB" kind="presentation" identifier="detalheAnimal" id="Vyg-CW-hDS"/>
+                        <segue destination="Xtc-yw-2yB" kind="show" identifier="detalheAnimal" id="Vyg-CW-hDS"/>
+                        <segue destination="ASo-eI-oSE" kind="presentation" identifier="goSucesso" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="dyj-ve-OfC"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UA5-Vk-TBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="815.20000000000005" y="112.3152709359606"/>
+            <point key="canvasLocation" x="828" y="-216.50246305418719"/>
         </scene>
-        <!--View Controller-->
+        <!--Sucesso View Controller-->
+        <scene sceneID="6UG-qN-LEr">
+            <objects>
+                <viewController id="ASo-eI-oSE" customClass="SucessoViewController" customModule="PetHelper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ldM-ea-bmH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checked" translatesAutoresizingMaskIntoConstraints="NO" id="BtJ-ln-0xT">
+                                <rect key="frame" x="112.66666666666669" y="154" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="e4M-M8-Ne4"/>
+                                    <constraint firstAttribute="width" constant="150" id="lsh-oN-vHS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Animal adotado com sucesso" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ec3-OA-3fD">
+                                <rect key="frame" x="41" y="369" width="293" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" red="0.41495442390441895" green="0.76041620969772339" blue="0.34862494468688965" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="😁" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zk8-2b-iqS">
+                                <rect key="frame" x="160.66666666666666" y="430" width="54" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="6NN-Mx-7zF"/>
+                                    <constraint firstAttribute="width" constant="54" id="gnT-2T-WQ6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKA-Rh-JYU">
+                                <rect key="frame" x="41" y="638" width="293" height="60"/>
+                                <color key="backgroundColor" red="0.41495442390441895" green="0.76041620969772339" blue="0.34862494468688965" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="URc-Nw-0HT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Voltar ao início"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="voltarAction:" destination="ASo-eI-oSE" eventType="touchUpInside" id="lMB-lF-LDe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zk8-2b-iqS" firstAttribute="top" secondItem="BtJ-ln-0xT" secondAttribute="bottom" constant="126" id="0D1-OE-nOL"/>
+                            <constraint firstItem="M2w-hO-DKr" firstAttribute="bottom" secondItem="YKA-Rh-JYU" secondAttribute="bottom" constant="80" id="58F-A0-8wN"/>
+                            <constraint firstItem="BtJ-ln-0xT" firstAttribute="top" secondItem="M2w-hO-DKr" secondAttribute="top" constant="110" id="JSa-Nh-wI8"/>
+                            <constraint firstItem="YKA-Rh-JYU" firstAttribute="leading" secondItem="M2w-hO-DKr" secondAttribute="leading" constant="41" id="K0r-wg-HRs"/>
+                            <constraint firstItem="Zk8-2b-iqS" firstAttribute="centerX" secondItem="ldM-ea-bmH" secondAttribute="centerX" id="brf-fe-S40"/>
+                            <constraint firstItem="M2w-hO-DKr" firstAttribute="trailing" secondItem="YKA-Rh-JYU" secondAttribute="trailing" constant="41" id="pIt-Sl-mRW"/>
+                            <constraint firstItem="BtJ-ln-0xT" firstAttribute="centerX" secondItem="ldM-ea-bmH" secondAttribute="centerX" id="ybY-XN-XCX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="M2w-hO-DKr"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xhg-bw-xe8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="576"/>
+        </scene>
+        <!--Detalhe Animal View Controller-->
         <scene sceneID="Epa-U3-Wsi">
             <objects>
-                <viewController id="Xtc-yw-2yB" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="Xtc-yw-2yB" customClass="DetalheAnimalViewController" customModule="PetHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ECc-ob-KE7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -376,13 +447,13 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Adotar"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
-                                        <integer key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="adotarAction:" destination="Xtc-yw-2yB" eventType="touchUpInside" id="PBS-J6-VIg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -413,10 +484,23 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="99M-eV-5hA"/>
                     </view>
+                    <connections>
+                        <outlet property="animalImage" destination="VFe-j1-UQa" id="aoE-ex-fy6"/>
+                        <outlet property="brinquedoLabel" destination="pg0-Zt-VAI" id="KDp-eB-rwi"/>
+                        <outlet property="castradoLabel" destination="Kp3-TK-kt6" id="dcL-F2-NMg"/>
+                        <outlet property="cidadeLabel" destination="K2J-kO-8n4" id="IeU-2q-3o2"/>
+                        <outlet property="descricaoLabel" destination="7cs-Gr-UJB" id="8sc-4E-Yln"/>
+                        <outlet property="distanciaLabel" destination="Wxg-0F-ONO" id="pbu-lq-dEx"/>
+                        <outlet property="hobbiesLabel" destination="MMm-7i-WYy" id="yI6-0s-YMe"/>
+                        <outlet property="nomeLabel" destination="VqR-UU-5fB" id="dJC-zg-4kL"/>
+                        <outlet property="porteLabel" destination="0Ju-bv-68H" id="uTm-ow-OGI"/>
+                        <outlet property="racaLabel" destination="mi9-48-8dy" id="z3w-Z1-dSQ"/>
+                        <outlet property="statusVacinaLabel" destination="cGh-OB-ivS" id="Dm6-uW-Y2R"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWM-0G-mU5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1848.8" y="-383.49753694581284"/>
+            <point key="canvasLocation" x="1855" y="-217"/>
         </scene>
         <!--Item-->
         <scene sceneID="ByS-yC-jc8">
@@ -439,4 +523,7 @@
             <point key="canvasLocation" x="-124" y="112.89355322338831"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="checked" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
 </document>
