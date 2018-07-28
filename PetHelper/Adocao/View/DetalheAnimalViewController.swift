@@ -28,6 +28,7 @@ class DetalheAnimalViewController: UIViewController {
     
     var delegate: AdotarProtocol?
     var animalSelecionado = [String: String]()
+    var imagemSelecionada: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +38,9 @@ class DetalheAnimalViewController: UIViewController {
     }
     
     func initialConfig() {
+        
+        navigationController?.hidesBarsOnTap = true
+        animalImage.image = UIImage(named: imagemSelecionada)
         nomeLabel.text = animalSelecionado["nome"]
         racaLabel.text = animalSelecionado["raca"]
         cidadeLabel.text = animalSelecionado["cidade"]
@@ -48,6 +52,10 @@ class DetalheAnimalViewController: UIViewController {
         statusVacinaLabel.text = animalSelecionado["statusvacina"]
         brinquedoLabel.text = animalSelecionado["brinquedo"]
         
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        navigationController?.hidesBarsOnTap = false
     }
     
     @IBAction func adotarAction(_ sender: Any) {

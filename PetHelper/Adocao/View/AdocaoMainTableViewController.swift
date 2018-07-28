@@ -17,6 +17,8 @@ class AdocaoMainTableViewController: UITableViewController {
     
     var animais = [[String: String]]()
     var animalSeleciondo: [String: String]!
+    var cachorrosImagens = [String]()
+    var imagemCachorroSelecionada: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +27,7 @@ class AdocaoMainTableViewController: UITableViewController {
         
         animal["nome"] = "Pipoca"
         animal["raca"] = "Labrador"
-        animal["porte"] = "Pequeno"
+        animal["porte"] = "Grande"
         animal["cidade"] = "Vitória"
         animal["castracao"] = "Sim"
         animal["hobbies"] = "Assustar os gatos"
@@ -42,8 +44,8 @@ class AdocaoMainTableViewController: UITableViewController {
         
         //---------------------------------------------------------------------------
         animal["nome"] = "Thor"
-        animal["porte"] = "Grande"
-        animal["raca"] = "Viralata"
+        animal["porte"] = "Pequeno"
+        animal["raca"] = "Viralata-leao"
         animal["cidade"] = "Rio de Janeiro"
         animal["castracao"] = "Sim"
         animal["hobbies"] = "Estourar bolhinhas"
@@ -107,6 +109,16 @@ class AdocaoMainTableViewController: UITableViewController {
         """
         animais.append(animal)
         animal = [:]
+        
+        let fm = FileManager.default
+        let path = Bundle.main.resourcePath
+        let items = try! fm.contentsOfDirectory(atPath: path!)
+        
+        for item in items {
+            if item.hasSuffix("jpg") {
+                cachorrosImagens.append(item)
+            }
+        }
 
         animaisCollectionView.isScrollEnabled = false
         tableView.estimatedRowHeight = 200
@@ -154,6 +166,7 @@ class AdocaoMainTableViewController: UITableViewController {
         
         if segue.identifier == "detalheAnimal" {
             if let vc = segue.destination as? DetalheAnimalViewController {
+                vc.imagemSelecionada = self.imagemCachorroSelecionada
                 vc.animalSelecionado = self.animalSeleciondo
                 vc.delegate = self
             }
@@ -218,6 +231,7 @@ extension AdocaoMainTableViewController: UICollectionViewDelegate, UICollectionV
         } else if collectionView == OngCollectionView {
             
         } else {
+            self.imagemCachorroSelecionada = self.cachorrosImagens[indexPath.row]
             self.animalSeleciondo = self.animais[indexPath.row]
             self.performSegue(withIdentifier: "detalheAnimal", sender: nil)
         }
